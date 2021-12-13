@@ -41,9 +41,7 @@ git checkout -b update_lb_${VERSION}
 # cp -rf liquibase.rb homebrew-core/liquibase.rb
 cp -rf ../liquibase.rb homebrew-core/liquibase.rb
 git add .
-git commit -m "liquibase: update $VERSION bottle."
-git commit --amend
+git commit -m "liquibase update $VERSION bottle."
 git status
 git push --set-upstream origin update_lb_${VERSION}
-git push --force
 cat homebrew-core/liquibase.rb
