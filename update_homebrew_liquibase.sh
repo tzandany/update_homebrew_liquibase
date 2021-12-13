@@ -32,11 +32,12 @@ echo "class Liquibase < Formula
   end
 end" > liquibase.rb
 
-git config --global user.email szandany@liquibase.com; git config --global user.name Tsvi; git config pull.rebase false
 # git clone https://github.com/Homebrew/homebrew-core
 git clone https://github.com/szandany/update_homebrew_liquibase_formulae
 cd update_homebrew_liquibase_formulae
-git checkout update_lb_${VERSION}
+ls
+git config --global user.email szandany@liquibase.com; git config --global user.name Tsvi; git config pull.rebase false
+git checkout -b update_lb_${VERSION}
 # cp -rf liquibase.rb homebrew-core/liquibase.rb
 cp -rf ../liquibase.rb homebrew-core/liquibase.rb
 git add .
