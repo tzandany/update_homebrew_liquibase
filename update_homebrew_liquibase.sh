@@ -32,6 +32,8 @@ echo "class Liquibase < Formula
   end
 end" > liquibase.rb
 
+git config --global user.email "szandany@liquibase.com"
+git config --global user.name "Tsvi"
 # git clone https://github.com/Homebrew/homebrew-core
 git clone https://github.com/szandany/update_homebrew_liquibase_formulae
 cd update_homebrew_liquibase_formulae
