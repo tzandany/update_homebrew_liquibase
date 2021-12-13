@@ -36,7 +36,7 @@ end" > liquibase.rb
 git clone https://github.com/szandany/update_homebrew_liquibase_formulae
 cd update_homebrew_liquibase_formulae
 git remote add tzandany https://github.com/tzandany/update_homebrew_liquibase_formulae.git
-git config --global user.email szandany@liquibase.com; git config --global user.name szandany; git config pull.rebase false
+git config --global user.email thezandan@gmail.com; git config --global user.name tzandany; git config pull.rebase false
 git checkout -b update_lb_${VERSION}
 # cp -rf liquibase.rb homebrew-core/liquibase.rb
 cp -rf ../liquibase.rb homebrew-core/liquibase.rb
