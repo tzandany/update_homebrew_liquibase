@@ -38,7 +38,8 @@ git config --global user.name "Tsvi"
 git clone https://github.com/szandany/update_homebrew_liquibase_formulae
 cd update_homebrew_liquibase_formulae
 git checkout update_lb_${VERSION}
-cp -rf liquibase.rb homebrew-core/liquibase.rb
+# cp -rf liquibase.rb homebrew-core/liquibase.rb
+cp -rf liquibase.rb update_homebrew_liquibase/liquibase.rb
 git add .
 git commit -m "liquibase: update $VERSION bottle."
 git commit --amend
