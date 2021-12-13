@@ -35,7 +35,7 @@ end" > liquibase.rb
 # git clone https://github.com/Homebrew/homebrew-core
 git clone https://github.com/szandany/update_homebrew_liquibase_formulae
 cd update_homebrew_liquibase_formulae
-ls
+ls -a
 git config --global user.email szandany@liquibase.com; git config --global user.name Tsvi; git config pull.rebase false
 git checkout -b update_lb_${VERSION}
 # cp -rf liquibase.rb homebrew-core/liquibase.rb
@@ -43,6 +43,7 @@ cp -rf ../liquibase.rb homebrew-core/liquibase.rb
 git add .
 git commit -m "liquibase: update $VERSION bottle."
 git commit --amend
+git status
 git push --set-upstream origin update_lb_${VERSION}
 git push --force
 cat homebrew-core/liquibase.rb
