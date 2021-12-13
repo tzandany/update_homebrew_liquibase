@@ -44,4 +44,4 @@ git config --global user.name tzandany
 git config pull.rebase false
 git add .
 git commit -m "liquibase: update $VERSION bottle."
-git push -u origin update_lb_${VERSION}
+# git push -u origin update_lb_${VERSION}
